@@ -31,7 +31,7 @@ p {
   min-height: 640px;
   line-height: 0;
   height: auto;
- 
+
   color: rgba(255,255,255,.9);
 }
 
@@ -57,6 +57,8 @@ footer.page-footer {
 .contact-photo {
   width: 300px;
   height: 300px;
+  margin: 2rem;
+  /*border: solid #00e5ff 4px;*/
 }
 
 .social-icon {
@@ -72,7 +74,7 @@ footer.page-footer {
   transition:.3s;
 }
 
-.footer-copyright a:hover { color: #D50000; }
+.footer-copyright a:hover { color: #d32f2f; }
 
 .connect i {
   color: #FF1744;
@@ -83,7 +85,7 @@ footer.page-footer {
   transition:.3s;
 }
 
-.connect i:hover { color: #D50000; }
+.connect i:hover { color: #d32f2f; }
 
 .container-block {
   display: block;
@@ -94,15 +96,22 @@ html {
 }
 
 body {
-    border-top: 5px solid #18FFFF;
+    border-top: 5px solid #00e5ff;
     height: 100%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    /*background-color: #FAFDFF;*/
 }
 
 main {
   flex: 1 0 auto;
+}
+
+h3 {
+  font-size: 5.5rem;
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width : 992px) {
