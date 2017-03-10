@@ -4,25 +4,25 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>mariogago</title>
-  <link rel="shortcut icon" href="/beta4.ico" type="image/x-icon">
-  <link rel="icon" href="/beta4.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="beta4.ico" type="image/x-icon">
+  <link rel="icon" href="beta4.ico" type="image/x-icon">
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="css/simple_materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
 </head>
 
 <body>
   <main class="mb-50">
-    <div id="index-banner" class="parallax-container main">
+    <div id="index-banner" class="container main">
       <div class="section no-pad-bot">
         <div class="container">
-          <h3 class="header center red-text darken-2 mt-30">It's me, Mário!</h3>
+          <h3 class="header center red-text darken-2">It's me, Mário!</h3>
 
-          <div class="row center mt-30">
+          <div class="row center">
             <img class="circle contact-photo" src="beta4.png" data-anim-src="beta4-anim.png">
           </div>
 
@@ -34,7 +34,7 @@
             <h5 class="header light"></h5>
           </div>
 
-          <div class="container-block valign-wrapper center-align mb-50">
+          <div class="container-block valign-wrapper center-align">
             <a class="connect" target="_blank" href="https://github.com/mgago">
               <i class="fa fa-github social-icon mr-15"></i>
             </a>
@@ -60,7 +60,7 @@
     </div>
   </main>
 
-  <div class="footer-copyright cyan accent-3">
+  <div class="cyan accent-3">
     <div class="container grey-text text-lighten-4 small-padding center">
     
     </div>
@@ -68,8 +68,13 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      var items = ['Almost a Software Engineer', 'Enemy of the empire', 'HUGE design skill set', '#harambe', 'I do AWSome sh**', 'In a relatonship with Android', 'Winter is Coming, buy some blankets', '"How can the net amount of entropy of the universe be massively decreased?"', '“Hamburgers: the cornerstone of any nutritious breakfast."', '#SejaOndeFor', 'Made in SBA'];
+      var item = items[Math.floor(Math.random()*items.length)];
+      $("#subtext").text(item);
+    });
+  </script>
   <script type="text/javascript">
     $(function() {
       $(".contact-photo").hover(
@@ -87,17 +92,10 @@
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-73824906-1', 'auto');
     ga('send', 'pageview');
-  </script>
-  <script type="text/javascript">
-    $(function() {
-      var items = ['Almost a Software Engineer', 'Enemy of the empire', 'HUGE design skill set', '#harambe', 'I do AWSome sh**', 'In a relatonship with Android', 'Winter is Coming, buy some blankets', '"How can the net amount of entropy of the universe be massively decreased?"', '“Hamburgers: the cornerstone of any nutritious breakfast."', '#SejaOndeFor', 'Made in SBA'];
-      var item = items[Math.floor(Math.random()*items.length)];
-      $("#subtext").text(item);
-    });
   </script>
   </body>
 </html>
